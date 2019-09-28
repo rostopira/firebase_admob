@@ -98,11 +98,11 @@
 
   GADAdSize adSize;
   if ([adSizeTypeArg isEqualToString:@"AdSizeType.SmartBanner"]) {
-    if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation)) {
+//     if (UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation)) {
       adSize = kGADAdSizeSmartBannerPortrait;
-    } else {
-      adSize = kGADAdSizeSmartBannerLandscape;
-    }
+//     } else {
+//       adSize = kGADAdSizeSmartBannerLandscape;
+//     }
   } else {
     adSize = GADAdSizeFromCGSize(CGSizeMake(width, height));
   }
